@@ -2,3 +2,15 @@
     cols: 1
     Label:
         text: "Enter the information below and paste the facebook post."
+    TextInput:
+        id: date
+        text: "Enter the Date in the following format: dd.mm.yyyy"
+    TextInput:
+        id: location
+        text: "Enter the Location"
+    TextInput:
+        id: post
+        text: "Enter the Post"
+    Button:
+        text: "GO"
+        on_press: root.update()
