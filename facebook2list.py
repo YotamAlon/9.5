@@ -12,8 +12,15 @@ class MainWindow(GridLayout):
         super(MainWindow, self).__init__(self)
 
 	def parse(self):
-		text = self.ids.post.text
-	    pass #when I see how the post looks I will continue this, should return a string
+		text = self.ids.post.text.split('\n')
+	    output = []
+        output[0] = (text[0], [line for line in text[2:text.index('LikeShow more reactions\n')]], text[1])
+        i = text.index('LikeShow more reactions\n')
+        while i < len(text):
+
+
+
+
 
 	def update(self):
 		if isfile("fb_posts.txt"):
