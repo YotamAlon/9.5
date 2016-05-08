@@ -22,6 +22,7 @@ class MainWindow(GridLayout):
 
 
 
+
 	def update(self):
 		if isfile("fb_posts.txt"):
 			f = open("fb_posts.txt", 'r+')
